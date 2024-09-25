@@ -66,4 +66,57 @@ public class TestFactorizer {
     assertEquals(13 + "", factorizer.exampleMethod(13));
   }
 
+
+
+  @Test
+  public void testisPrimeThirtySix() {
+    assertEquals(false, factorizer.isPrime(36));
+  }
+
+  @Test
+  public void testisPrimeTwelve() {
+    assertEquals(false, factorizer.isPrime(12));
+  }
+
+  @Test
+  public void testisPrimeSeventeen() {
+    assertEquals(true, factorizer.isPrime(17));
+  }
+
+  @Test
+  public void testisPrimeOne() {
+    assertEquals(false, factorizer.isPrime(1));
+  }
+
+  @Test
+  public void testisPrimeZero() {
+    assertEquals(false, factorizer.isPrime(0));
+  }
+
+  @Test
+  public void testisCompositeThirtySix() {
+    assertEquals(true, factorizer.isComposite(36));
+  }
+
+  @Test
+  public void testisCompositeTwelve() {
+    assertEquals(true, factorizer.isComposite(12));
+  }
+
+  @Test
+  public void testisCompositeSeventeen() {
+    assertEquals(false, factorizer.isComposite(17));
+  }
+
+  @Test
+  public void testisCompositeOne() {
+    assertEquals(false, factorizer.isComposite(1));
+  }
+
+  @Test
+  public void testisCompositeZero() {
+    assertEquals(false, factorizer.isComposite(0));
+  }
+
+
 }
